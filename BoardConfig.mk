@@ -1,10 +1,10 @@
 # inherit common device tree
 -include device/oppo/msm8974-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/oppo/find7op
+LOCAL_PATH := device/oppo/bacon
 
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := find7op
+TARGET_BOOTLOADER_BOARD_NAME := bacon
 TARGET_OTA_ASSERT_DEVICE := find7op,bacon
 
 # Partition info
@@ -19,5 +19,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
 # Recovery:Start
 
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/configs/fstab.find7op
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/configs/fstab.bacon
 RECOVERY_SDCARD_ON_DATA := true
+TW_TARGET_USES_QCOM_BSP := true
+TARGET_USERIMAGES_USE_F2FS := true

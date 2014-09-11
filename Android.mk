@@ -22,7 +22,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),find7op)
+ifeq ($(TARGET_DEVICE),bacon)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
