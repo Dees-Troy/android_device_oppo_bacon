@@ -4,7 +4,11 @@
 # Everything in this directory will become public
 
 # Include common makefile
-$(call inherit-product, device/oppo/msm8974-common/common.mk)
+#$(call inherit-product, device/oppo/msm8974-common/common.mk)
+
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    charger
 
 LOCAL_PATH := device/oppo/bacon
 
